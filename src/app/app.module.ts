@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TextImageComponent } from './text-image/text-image.component';
-import { VideoComponent } from './video/video.component';
-import { InputComponent } from './input/input.component';
+import { HomeComponent } from './Home/home.component';
+import { AboutComponent } from './About/about.component';
+import { ContactComponent } from './Contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TextImageComponent,
-    VideoComponent,
-    InputComponent
+    HomeComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

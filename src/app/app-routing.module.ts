@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InputComponent } from './input/input.component';
-import { TextImageComponent } from './text-image/text-image.component';
-import { VideoComponent } from './video/video.component';
+import { ContactComponent } from './Contact/contact.component';
+import { HomeComponent } from './Home/home.component';
+import { AboutComponent } from './About/about.component';
 
 const routes: Routes = [
-  { path: '', component: TextImageComponent},
-  { path: 'text-image', component: TextImageComponent},
-  { path: 'video', component: VideoComponent},
-  { path: 'input', component: InputComponent}
+  { path: '', component: HomeComponent},
+  { path: 'Home', component: HomeComponent},
+  { path: 'About', component: AboutComponent},
+  { path: 'Contact', component: ContactComponent}
 ];
 
 @NgModule({
@@ -16,4 +16,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routiongComponents = [TextImageComponent, VideoComponent, InputComponent]
+export const routiongComponents = [HomeComponent, AboutComponent, ContactComponent]
